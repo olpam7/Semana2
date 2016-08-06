@@ -1,0 +1,73 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	Caracter c = new Caracter();
+        char Car;
+        Console.WriteLine("Teclea un caracter (digito, vocal o caracter especial");
+        Car = Convert.ToChar(Console.ReadLine());
+        c.Calcula(Car);
+        Console.ReadLine();
+    }
+}
+
+class Caracter
+{
+
+    public void Calcula(char Car)
+    {
+        switch (Car)
+        {
+            case 'a':
+                Console.WriteLine("Es vocal minuscula "+Car);
+                break;
+            case 'e':
+                Console.WriteLine("Es vocal minuscula "+Car);
+                break;
+            case 'i':
+                Console.WriteLine("Es vocal minuscula "+Car);
+                break;
+            case 'o':
+                Console.WriteLine("Es vocal minuscula "+Car);
+                break;
+            case 'u':
+                Console.WriteLine("Es vocal minuscula "+Car);
+                break;
+			case '1':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '2':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '3':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '4':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '5':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+			case '6':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '7':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '8':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '9':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+            case '0':
+                Console.WriteLine("Es un digito "+Car);
+                break;
+			default:
+                Console.WriteLine("Es un caracter especial o consonante "+Car);
+                break;
+        }
+    }
+}
