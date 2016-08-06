@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double a,b;
+		Console.WriteLine("Ingrese primer valor");
+		a=Convert.ToDouble(Console.ReadLine());
+		Console.WriteLine("Ingrese segundo valor");
+		b=Convert.ToDouble(Console.ReadLine());
+		if((a % 2) == 0 && (b % 2) != 0)
+    	Console.WriteLine("Falso");
+		if((a % 2) != 0 && (b % 2) == 0)
+    	Console.WriteLine("Falso");
+		else
+			Console.WriteLine("verdadero");
+
+	}
+}
