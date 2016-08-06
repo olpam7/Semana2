@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double radio, volumen, superficie, pi;
+		pi=3.14159265358979323846;
+		Console.WriteLine("Introduce el Radio");
+		radio=Convert.ToDouble(Console.ReadLine());
+		volumen=4/3*pi*radio*radio*radio;
+		superficie=4*pi*radio*radio;
+		Console.WriteLine("La superficie es "+superficie+" unidades metricas cuadradas");
+		Console.ReadLine();
+		Console.WriteLine("El volumen es "+volumen+" unidades metricas cubicas");
+		Console.ReadLine();
+	}
+}
