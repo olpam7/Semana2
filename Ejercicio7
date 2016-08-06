@@ -1,0 +1,24 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double distancia, hora, min, seg, tiempo, mps, kph, mph;
+		Console.WriteLine("Ingresa distancia recorrida, en metros");
+		distancia= Convert.ToDouble(Console.ReadLine());
+		Console.WriteLine("Ingresa horas usadas");
+		hora= Convert.ToDouble(Console.ReadLine());
+		Console.WriteLine("Ingresa minutos usados");
+		min= Convert.ToDouble(Console.ReadLine());
+		Console.WriteLine("Ingresa segundos usadas");
+		seg= Convert.ToDouble(Console.ReadLine());
+		tiempo=hora*3600+min*60+seg;
+		mps=distancia/tiempo;
+		kph= (distancia/1000)/(tiempo/3600);
+		mph=kph/1.609;
+		Console.WriteLine("tu velocidad en metros / seg "+mps);
+		Console.WriteLine("tu velocidad en km / h  "+kph);
+		Console.WriteLine("tu velocidad en millas / h  "+mph);
+	}
+}
