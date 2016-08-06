@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		double radio, perimetro,area, pi;
+		pi=3.14159265358979323846;
+		Console.WriteLine("Introduce el Radio");
+		radio=Convert.ToDouble(Console.ReadLine());
+		perimetro=2*pi*radio;
+		area=pi*radio*radio;
+		Console.WriteLine("El perimetro es "+perimetro+" unidades metricas");
+		Console.ReadLine();
+		Console.WriteLine("El area es "+area+" unidades metricas cuadradas");
+		Console.ReadLine();
+	}
+}
